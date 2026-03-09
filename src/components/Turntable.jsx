@@ -59,34 +59,34 @@ export default function Turntable({ isPlaying, trackName }) {
 
           {/* ── Label ── */}
           <circle cx="150" cy="150" r="42" fill="#080810" />
-          {/* Outer orange ring */}
-          <circle cx="150" cy="150" r="40" fill="none" stroke="#ff6200" strokeWidth="0.9" opacity="0.75" />
+          {/* Outer accent ring */}
+          <circle cx="150" cy="150" r="40" fill="none" stroke="#fc3c44" strokeWidth="0.9" opacity="0.70" />
           {/* Inner thin ring */}
-          <circle cx="150" cy="150" r="36" fill="none" stroke="#ff6200" strokeWidth="0.35" opacity="0.3" />
+          <circle cx="150" cy="150" r="36" fill="none" stroke="#fc3c44" strokeWidth="0.35" opacity="0.25" />
 
           {/* Brand name */}
           <text
             x="150" y="143"
             textAnchor="middle"
-            fill="#ff6200"
+            fill="#ffffff"
             fontSize="6.5"
-            fontFamily="Orbitron, monospace"
-            fontWeight="700"
-            letterSpacing="3"
-            opacity="0.9"
+            fontFamily="-apple-system, Helvetica Neue, sans-serif"
+            fontWeight="600"
+            letterSpacing="2.5"
+            opacity="0.75"
           >VINYLWAVE</text>
 
           {/* Divider */}
-          <line x1="128" y1="149" x2="172" y2="149" stroke="#ff6200" strokeWidth="0.4" opacity="0.3" />
+          <line x1="128" y1="149" x2="172" y2="149" stroke="rgba(255,255,255,0.15)" strokeWidth="0.4" opacity="0.6" />
 
           {/* Track name */}
           <text
             x="150" y="160"
             textAnchor="middle"
-            fill="#7a7a8c"
+            fill="rgba(235,235,245,0.45)"
             fontSize="6.2"
-            fontFamily="DM Mono, monospace"
-            fontWeight="300"
+            fontFamily="-apple-system, Helvetica Neue, sans-serif"
+            fontWeight="400"
             letterSpacing="0.5"
           >{shortLabel}</text>
 

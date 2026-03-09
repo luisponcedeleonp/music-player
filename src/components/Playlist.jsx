@@ -5,7 +5,7 @@ export default function Playlist({ tracks, currentIndex, isPlaying, onSelect }) 
         <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
           <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
         </svg>
-        <span>LISTA DE REPRODUCCIÓN</span>
+        <span>En cola</span>
         <span className="playlist-count">{tracks.length}</span>
       </div>
       <ul className="playlist-list">

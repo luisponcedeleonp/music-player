@@ -82,9 +82,9 @@ export default function Equalizer({ analyserNode, isPlaying }) {
 
         // Bar gradient
         const grad = ctx.createLinearGradient(0, h, 0, 0)
-        grad.addColorStop(0,    '#ff6200')
-        grad.addColorStop(0.55, '#ff8c3a')
-        grad.addColorStop(1,    '#ffcc60')
+        grad.addColorStop(0,    '#fc3c44')
+        grad.addColorStop(0.55, '#ff6b70')
+        grad.addColorStop(1,    'rgba(255,255,255,0.55)')
         ctx.fillStyle = grad
         ctx.fillRect(x, y, bw, barH)
 
@@ -94,7 +94,7 @@ export default function Equalizer({ analyserNode, isPlaying }) {
 
         if (peaks.current[i] > 3) {
           const peakY = h - peaks.current[i] - 2
-          ctx.fillStyle = 'rgba(255, 220, 100, 0.85)'
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.50)'
           ctx.fillRect(x, peakY, bw, 2)
         }
       }
