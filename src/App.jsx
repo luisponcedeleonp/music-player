@@ -167,7 +167,7 @@ export default function App() {
             </div>
 
             <div className="now-playing">
-              <span className="np-label">Now Playing</span>
+              <span className="np-label">Reproduciendo ahora</span>
               <span className="np-title">{currentTrack?.name || '—'}</span>
             </div>
 
@@ -208,7 +208,7 @@ export default function App() {
                   <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
                 </svg>
                 <p>Sin canciones</p>
-                <span>Sube archivos de audio para comenzar</span>
+                <span>Agrega archivos de audio para comenzar</span>
               </div>
             )}
           </div>
